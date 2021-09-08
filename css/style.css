@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+  margin: auto;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.header {
+  height: 100vh;
+}
+
+.navigation ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 13%;
+}
+
+.navigation ul li {
+  margin-right: 60px;
+  list-style: none;
+  font-family: "Rufina", serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navigation ul li:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+.navigation ul li:hover:after {
+  width: 100%;
+  background: black;
+}
+
+.navigation ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.social-media ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15%;
+}
+
+.social-media ul li {
+  list-style: none;
+  font-family: "Rufina", serif;
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 8%;
+}
+
+.social-media ul li i {
+  cursor: pointer;
+}
+
+.social-media ul li i:hover {
+  font-size: xx-large;
+  transition: all 0.2s ease-in;
+}
+
+.social-media ul li .bi-facebook:hover {
+  color: blue;
+}
+
+.social-media ul li .bi-instagram:hover {
+  background: -webkit-linear-gradient(
+    #515bd4,
+    #8134af,
+    #dd2a7b,
+    #feda77,
+    #f58529
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.social-media ul li .bi-twitter:hover {
+  color: #08a0e9;
+}
+
+.social-media ul li .bi-google:hover {
+  color: red;
+}
+
+.about {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.about div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  margin: 0;
+  border-radius: 8px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.about h1 {
+  font-family: "Rufina";
+  font-size: x-large;
+  margin-top: 15px;
+}
+
+.about p {
+  color: gray;
+  font-family: "Roboto";
+}
+
+.about .about-story {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200;
+  font-size: medium;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  padding: 0 20%;
+  color: black;
+  margin-top: 20px;
+}
+
+.gallery {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.02);
+  padding-bottom: 5%;
+}
+
+.gallery h1 {
+  font-family: "Rufina";
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+
+  padding: 0 20%;
+}
+
+.gallery-item {
+  padding: 10px;
+  background-color: white;
+  border-radius: 4px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+
+  cursor: pointer;
+}
+
+.gallery-item:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+
+  z-index: 1000;
+}
+
+.gallery-item > img {
+  width: 100%;
+}
+
+.contact {
+  display: flex;
+  flex-flow: column nowrap;
+
+  height: 100vh;
+
+  padding: 5% 0;
+}
+
+.contact h6 {
+  font-size: smaller;
+  font-family: "Roboto";
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.contact h1 {
+  font-family: "Rufina";
+}
+
+.contact p {
+  color: gray;
+  font-family: "Roboto";
+}
+
+.contact .contact-info {
+  color: black;
+}
+
+form {
+  width: 100%;
+}
+
+.mb-3 {
+  margin-top: 10px;
+}
+
+label {
+  font-family: "Rufina";
+  font-weight: bold;
+}
+
+.btn-send-email {
+  width: 100%;
+
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: medium;
+
+  background-color: #383838;
+  border: 0;
+}
+
+.btn-send-email:hover {
+  background-color: #272727;
+
+  transition: all 0.5s;
+}
+
+input[type="text"] {
+  background-color: #f0f0f0;
+  border: 0;
+}
+
+textarea {
+  background-color: #f0f0f0;
+}
